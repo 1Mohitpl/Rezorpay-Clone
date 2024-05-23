@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    
+<script src="https://unpkg.com/feather-icons"></script>
+    
     <link rel="stylesheet" href="style.css" />
     <title>Razorpay</title>
   </head>
@@ -145,30 +148,36 @@
         <div class="w-7 h-1 bg-lime-500 mx-auto mt-4 mb-7"></div>
 
         <!--content box-->
-        <div>
+        <div class="w-full bg-white flex rounded-md relative p-10 py-12">
           <!--left section -->
-          <div>
-            <h3>
+          <div class="flex flex-col justify-between items-center w-full">
+            <h3 class="font-mullish text-xl leading-11 font-extrabold max-w-[300px]">
                  Supercharge your business with the all-powerfull
                  <span class="text-lightBlue">Payment Gateway</span>
             </h3>
-            <ul>
-              <li>
+            <ul class="space-y-2">
+              <li class="font-mullish flex items-center space-x-2">
+                <i data-feather = "check" class="text-green-600"></i>
                    <span>100+ Payments Methodes</span>
               </li>
-              <li>
+              <li class="font-mullish flex items-center space-x-2">
+                <i data-feather = "check" class="text-green-600"></i>
                    <span>Industry Leading sucess Rate</span>
               </li>
-              <li>
+              <li class="font-mullish flex items-center space-x-2">
+                <i data-feather = "check" class="text-green-600"></i>
                    <span>Suprior checkout experince</span>
               </li>
-              <li>
+              <li class="font-mullish flex items-center space-x-2">
+                <i data-feather = "check" class="text-green-600"></i>
                    <span> Esay to integrate</span>
               </li>
-              <li>
+              <li class="font-mullish flex items-center space-x-2">
+                <i data-feather = "check" class="text-green-600"></i>
                   <span> Instant Settlements fdrom day1</span>
               </li>
-              <li>
+              <li class="font-mullish flex items-center space-x-2">
+                <i data-feather = "check" class="text-green-600"></i>
                   <span>Indepth Reporting and Insights</span>
               </li>
             </ul>
@@ -192,6 +201,9 @@
       </div>
          
       </section>
-  
+      
+      <script>
+        feather.replace()
+      </script>
   </body>
 </html>
