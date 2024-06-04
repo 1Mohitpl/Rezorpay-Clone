@@ -9,9 +9,27 @@
     
     <link rel="stylesheet" href="style.css" />
     <title>Razorpay</title>
+
+    <style>
+      .companiesList{
+        animation: 7s infinite linear moveImage ;
+      }
+
+      @keyframes moveImage{
+        0%{
+          top: 0;
+        }
+        100%{
+          top: -50%;
+        }
+
+      }
+
+    </style>
   </head>
   <body>
-    <!--navber-->
+    <div class="overflow-x-hidden relative w-full">
+          <!--navber-->
     <nav class="bg-deepBlue">
       <div
         class="relative w-[1080px] mx-auto flex items-center justify-between"
@@ -21,7 +39,7 @@
         </a>
         <ul class="flex space-x-6">
           <li
-            class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-300 relative group"
+            class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-300 relative group hidden lg:block"
           >
             <a href="#Payments">Payments</a>
             <div
@@ -30,7 +48,7 @@
           </li>
 
           <li
-            class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group"
+            class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group hidden lg:block"
           >
             <a href="#Banking+">Banking+</a>
             <div
@@ -39,7 +57,7 @@
           </li>
 
           <li
-            class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group"
+            class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group hidden lg:block"
           >
             <a href="#Payroll">Payroll</a>
             <div
@@ -48,7 +66,7 @@
           </li>
 
           <li
-            class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group"
+            class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group hidden lg:block"
           >
             <a href="#Partners">Partners</a>
             <div
@@ -57,7 +75,7 @@
           </li>
 
           <li
-            class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group"
+            class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group hidden lg:block"
           >
             <a href="#Resources">Resources</a>
             <div
@@ -66,7 +84,7 @@
           </li>
 
           <li
-            class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group"
+            class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group hidden lg:block"
           >
             <a href="#Support">Support</a>
             <div
@@ -75,7 +93,7 @@
           </li>
 
           <li
-            class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group"
+            class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group hidden lg:block"
           >
             <a href="#Pricing">Pricing</a>
             <div
@@ -103,7 +121,7 @@
 
     <!--next -section-->
     <section class=" relative bg-deepBlue">
-      <div class="w-10/12 max-w[1080px] flex flex-row justify-between items-center mx-auto ">
+      <div class="w-10/12 max-w[1080px] flex flex-col lg:flex-row justify-between items-center mx-auto ">
            <!--left part-->   
            <div class="space-y-8">
             <h1 class="font-mullish font-bold text-[40px] leading-[1.2] text-white opacity-35">Power Your finance, grow your business</h1>
@@ -183,11 +201,11 @@
             </ul>
           <!--for button & hyperlink-->
 
-          <div class="flex flex-row items-center space-x-5">
-            <button class=" flex font-mullish bg-lightBlue500 min-w-[150px] text-xl rounded-3xl text-white font-bold hover:bg-lightBlue500 transition-all duration-200"> Sign Up Now <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" id="right-arrow"><path fill="#14171A" fill-rule="evenodd" d="M14.189 11.25 11.47 8.53a.749.749 0 1 1 1.06-1.06l3.293 3.293a1.75 1.75 0 0 1 0 2.474L12.53 16.53a.749.749 0 1 1-1.06-1.06l2.719-2.72H8a.75.75 0 0 1 0-1.5h6.189Z" clip-rule="evenodd"></path></svg> </button>
+          <div class="flex flex-col-reverse md:flex-row items-center space-x-5">
+            <button class=" flex font-mullish w-full md:w-fit bg-lightBlue500 min-w-[150px] text-xl rounded-3xl text-white font-bold hover:bg-lightBlue500 transition-all duration-200"> Sign Up Now <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" id="right-arrow"><path fill="#14171A" fill-rule="evenodd" d="M14.189 11.25 11.47 8.53a.749.749 0 1 1 1.06-1.06l3.293 3.293a1.75 1.75 0 0 1 0 2.474L12.53 16.53a.749.749 0 1 1-1.06-1.06l2.719-2.72H8a.75.75 0 0 1 0-1.5h6.189Z" clip-rule="evenodd"></path></svg> </button>
             <!--hyperlink-->
             
-            <div class="flex items-center cursor-pointer group">
+            <div class="flex items-center cursor-pointer group self-start">
               <a href="#" 
               class="font-mullish font-bold text-gray-600 group-hover:text-lightBlue transition-all duration-200 ">Know more</a>
               <i data-feather="chevron-right" class="w-5 h-5 text-gray-600 group-hover:text-lightBlue"></i>
@@ -197,7 +215,7 @@
 
           </div>
           <img src="./Images/payment-suite.png" alt=""
-          class="absolute max-w-[600px] right-0 buttom-0">
+          class="absolute max-w-[600px] right-0 buttom-0 hidden md:max-w-[400px] lg:max-w-[600px] md:block lg:block">
 
         </div>
 
@@ -1085,7 +1103,7 @@
       <!--right part-->
       <div class="h-[500px] w-[500px] relative overflow-y-hidden mx-auto">
         <div style="background: linear-gradient(180deg, #f4f8ff, #fff0)"
-        class="absolute w-full h-[150px] top-0 z-50">    </div>
+        class="absolute w-full h-[150px] top-0 z-50"></div>
 
         <img src="./Images/comanies.png" alt=""
         class="absolute  h-auto object-cover companiesList">
@@ -1919,6 +1937,8 @@
       </div>
     </div>
   </footer>
+    </div>
+
 
 
       <script>
